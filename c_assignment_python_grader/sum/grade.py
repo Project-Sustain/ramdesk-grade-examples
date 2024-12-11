@@ -16,9 +16,19 @@ print('first:', first)
 print('second:', second)
 print('sum:', tot)
 
+print('compiling student submission')
+result = subprocess.run(['gcc', submission_path, '-o',
+                        'submission'], capture_output=True, text=True)
+if result.returncode != 0:
+    print('compilation error!')
+    print(result.stdout)
+    print(result.stderr)
+    print(0)
+    sys.exit(0)
+
 print('running student submission')
-result = subprocess.run(['python3', submission_path, str(
-    first), str(second)], capture_output=True, text=True, check=True)
+result = subprocess.run(['./submission', str(first), str(second)],
+                        capture_output=True, text=True, check=True)
 
 print('student submission output:', result.stdout)
 
