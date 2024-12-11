@@ -9,3 +9,11 @@ Running `make` should produce the executable `reverse`.
 * horse -> esroh
 * desserts -> stressed
 * flow -> wolf
+
+
+### RamDesk Grade Configuration
+
+Enable the following:
+* Extract
+* Make
+* Table grading
