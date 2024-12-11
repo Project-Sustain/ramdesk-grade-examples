@@ -1,6 +1,16 @@
-# Sum (Java)
+# Rectangle (Java)
+
+[< Home](../../README.md)
 
 Write a Java class Rectangle that takes in two integers, width and height, and has a methods `getArea` and `getPerimeter` that return the area and perimeter of the rectangle respectively.
+
+
+### Examples
+
+```java
+new Rectangle(2, 3).getArea(); // 6
+new Rectangle(5, 8).getPerimeter(); // 26
+```
 
 
 ### Grade command

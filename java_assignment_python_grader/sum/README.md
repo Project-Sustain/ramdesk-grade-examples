@@ -1,4 +1,6 @@
-# #1 Integer Sum (Java)
+# Sum (Java)
+
+[< Home](../../README.md)
 
 Print the sum of all the integers given as arguments to your Java program.
 * You cannot use the package `java.util`.
@@ -12,7 +14,15 @@ Print the sum of all the integers given as arguments to your Java program.
 
 ### Examples
 
-```java
-java Sum 1 2 3 4 // 10
-java Sum 15 99 134 // 248
+```bash
+java Sum 1 2 3 4 # 10
+java Sum 15 99 134 # 248
+```
+
+### Grade command
+
+This is the command to set up the grader in RamDesk.
+
+```bash
+python {{grader.path}} {{submission.all_file_paths}}
 ```
