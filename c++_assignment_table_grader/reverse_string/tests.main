@@ -1,0 +1,5 @@
+# name % points % command % input % result
+test1 % 10 % ./sub/reverse 1234 % % 4321
+test2 % 10 % ./sub/reverse asdf % % fdsa
+test3 % 10 % ./sub/reverse 1234asdf % % fdsa4321
+test4 % 70 % ./sub/reverse acvqerqrefasdvads % % sdavdsaferqreqvca
