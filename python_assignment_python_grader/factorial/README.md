@@ -2,7 +2,7 @@
 
 [< Home](../../README.md)
 
-Write a Python program that prints the factorial of a number read from stdin.
+Write a Python program that prints the factorial of a number in the args.
 
 
 ### Examples

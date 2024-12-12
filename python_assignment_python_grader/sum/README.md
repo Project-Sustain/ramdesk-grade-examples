@@ -2,7 +2,7 @@
 
 [< Home](../../README.md)
 
-Write a Python program that prints the sum of 2 integers from stdin.
+Write a Python program that prints the sum of 2 integers in the args.
 
 
 ### Examples
