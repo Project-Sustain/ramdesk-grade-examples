@@ -11,3 +11,4 @@ Example grading scripts for RamDesk
     * [Sum](java_assignment_python_grader/sum/README.md)
 * Python assignment with Python grader
     * [Sum](python_assignment_python_grader/sum/README.md)
+    * [Factorial](python_assignment_python_grader/factorial/README.md)
