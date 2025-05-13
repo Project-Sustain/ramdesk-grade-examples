@@ -3,12 +3,12 @@ import sys
 import subprocess
 import datetime
 
+TOTAL_POINTS = 10
+
 print('grader started')
 
 # the path to the student submission is the first argument
 submission_path = sys.argv[1]
-
-late_penalty = 1
 
 try:
     time_now = datetime.datetime.fromisoformat(sys.argv[2])
@@ -16,11 +16,13 @@ try:
     until_date = datetime.datetime.fromisoformat(sys.argv[4])
     
     # make a late penalty that becomes more severe after the due date, as time approaches the until date
-    late_penalty = (until_date - time_now).total_seconds() / (until_date - due_date).total_seconds()
-    print(f'late penalty: -{100 - 100 * late_penalty:.2f}%')
+    late_penalty = TOTAL_POINTS - TOTAL_POINTS *(until_date - time_now).total_seconds() / (until_date - due_date).total_seconds()
+    print(f'late penalty: -{late_penalty:.2f} points')
 except ValueError:
-    print('Missing canvas dates (due or until), no penalty applied')
-
+    late_penalty = 0
+    print('missing canvas dates (due or until), no penalty applied')
+    
+    
 # generate 2 random integers
 first = random.randrange(0, 100)
 second = random.randrange(0, 100)
@@ -38,7 +40,7 @@ print('student submission output:', result.stdout)
 
 if result.stdout.strip() == str(tot):
     print('success!')
-    print(10 * late_penalty)  # dynamically adjust the score based on how late the submission is
+    print(10 - late_penalty)  # dynamically adjust the score based on how late the submission is
 else:
     print('error!')
     print(0)  # 0 points awarded
