@@ -18,5 +18,5 @@ python solution.py 15 99 # 114
 This is the command to set up the grader in RamDesk.
 
 ```bash
-python {{grader.path}} {{submission.file_path}}
+python {{grader.file_path}} {{submission.file_path}}
 ```

@@ -24,5 +24,5 @@ java Sum 15 99 134 # 248
 This is the command to set up the grader in RamDesk.
 
 ```bash
-python {{grader.path}} {{submission.all_file_paths}}
+python {{grader.file_path}} {{submission.all_file_paths}}
 ```
