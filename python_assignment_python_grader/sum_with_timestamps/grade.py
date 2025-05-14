@@ -11,16 +11,16 @@ print('grader started')
 submission_path = sys.argv[1]
 
 try:
-    time_now = datetime.datetime.fromisoformat(sys.argv[2])
+    submitted_date = datetime.datetime.fromisoformat(sys.argv[2])
     due_date = datetime.datetime.fromisoformat(sys.argv[3])
     until_date = datetime.datetime.fromisoformat(sys.argv[4])
     
     # make a late penalty that becomes more severe after the due date, as time approaches the until date
-    late_penalty = TOTAL_POINTS - TOTAL_POINTS *(until_date - time_now).total_seconds() / (until_date - due_date).total_seconds()
+    late_penalty = TOTAL_POINTS - TOTAL_POINTS *(until_date - submitted_date).total_seconds() / (until_date - due_date).total_seconds()
     print(f'late penalty: -{late_penalty:.2f} points')
 except ValueError:
     late_penalty = 0
-    print('missing canvas dates (due or until), no penalty applied')
+    print('due and/or until not found in canvas, no penalty applied')
     
     
 # generate 2 random integers
