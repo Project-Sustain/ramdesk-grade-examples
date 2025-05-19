@@ -1,4 +1,4 @@
-# Sum (Python)
+# Sum with Timestamps(Python)
 
 [< Home](../../README.md)
 
