@@ -1,5 +1,5 @@
 # name % points % command % input % result
-test1 % 10 % ./sub/even_odd 4 % % even
-test2 % 10 % ./sub/even_odd 7 % % odd
-test3 % 10 % ./sub/even_odd 15 42 % % odd even
-test4 % 70 % ./sub/even_odd 1 2 3 4 5 6 7 8 9 10 % % odd even odd even odd even odd even odd even
+test1 % 10 % python ./sub/even_odd.py 4 % % even
+test2 % 10 % python ./sub/even_odd.py 7 % % odd
+test3 % 10 % python ./sub/even_odd.py 15 42 % % odd even
+test4 % 70 % python ./sub/even_odd.py 1 2 3 4 5 6 7 8 9 10 % % odd even odd even odd even odd even odd even
