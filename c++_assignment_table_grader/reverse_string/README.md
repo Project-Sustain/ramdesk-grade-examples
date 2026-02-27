@@ -1,4 +1,4 @@
-# #2 Reverse String (C++)
+# Reverse String (C++)
 
 [< Home](../../README.md)
 

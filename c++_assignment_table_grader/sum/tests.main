@@ -1,0 +1,5 @@
+# name % points % command % input % result
+test1 % 10 % ./sub/sum 4 7 % % 11
+test2 % 10 % ./sub/sum 3 3 3 % % 9
+test3 % 10 % ./sub/sum 1 2 3 4 5 % % 15
+test4 % 70 % ./sub/sum 374 2156 37992 % % 42122

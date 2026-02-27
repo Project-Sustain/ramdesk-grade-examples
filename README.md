@@ -8,6 +8,7 @@ Example grading scripts for RamDesk
     * [Triangle](c++_assignment_c++_grader/triangle/README.md)
 * C++ assignment with table grader
     * [Reverse String](c++_assignment_table_grader/reverse_string/README.md)
+    * [Sum](c++_assignment_table_grader/sum/README.md)
 * Java assignment with Java grader
     * [Rectangle](java_assignment_java_grader/rectangle/README.md)
 * Java assignment with Python grader
@@ -17,3 +18,5 @@ Example grading scripts for RamDesk
     * [Factorial](python_assignment_python_grader/factorial/README.md)
 * Python assignment with Python grader using timestamps
     * [Sum](timestamp_example_grader/README.md)
+* Python assignments with table grader
+    * [Sum](python_assignment_table_grader/sum/README.md)
